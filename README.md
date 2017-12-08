@@ -43,3 +43,5 @@ Rscript src/corr.R "data/gap_map_edu.csv" "data/corr.csv"
 Rscript src/viz.R "data/gap_map_edu.csv" "result/figure"
 Rscript -e "ezknitr::ezknit('src/report.Rmd', out_dir = 'doc')"
 ```
+## Script Dependency Diagram
+![](result/figure/dependency.PNG)
