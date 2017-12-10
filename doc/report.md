@@ -21,7 +21,7 @@ From the scatter plot below, we can see a clear trend between tertiary education
 Using the `cor.test()` function in R, I found the Pearson's correlation between GDP per capita and tertiary education attainment to be 0.6189764 and the p-value to be 0.
 
 # Conclusion
-There is statistically significant, moderately strong correlation between GDP per capita and tertiary education attainment
+There is statistically significant, moderately strong positive correlation between GDP per capita and tertiary education attainment
 
 Tertiary education attainment in percentage by country:
 ![alt tag](../result/figure/map.png)
