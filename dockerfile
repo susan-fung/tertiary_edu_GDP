@@ -4,8 +4,8 @@
 # Use rocker/tidyverse as the base image and
 FROM rocker/tidyverse
 
-# Restore the R environment from packrat
-RUN R -e "install.packages('packrat', repos='http://cran.us.r-project.org'); packrat::restore()"
+# Install ezknitr packages
+RUN R -e "install.packages('ezknitr', repos='http://cran.us.r-project.org')"
 
-# Run Makefile
-RUN make all
+# Change directory and provide default for executing container
+CMD cd C:/Users/I834598/Desktop/tertiary_edu_GDP && make all
