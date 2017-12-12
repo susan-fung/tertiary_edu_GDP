@@ -5,7 +5,7 @@
 FROM rocker/tidyverse
 
 # Restore the R environment from packrat
-RUN Rscript -e "packrat::restore()"
+RUN R -e "install.packages('packrat', repos='http://cran.us.r-project.org'); packrat::restore()"
 
 # Run Makefile
 RUN make all
