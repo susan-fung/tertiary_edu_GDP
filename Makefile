@@ -8,7 +8,7 @@
 all: doc/report.md
 
 data/gap_map_edu.csv: data/tertiary.csv src/data_wrangling.R
-src/data_wrangling.R "data/tertiary.csv" "data/gap_map_edu.csv"
+	src/data_wrangling.R "data/tertiary.csv" "data/gap_map_edu.csv"
 
 data/corr.csv: src/corr.R data/gap_map_edu.csv
 	Rscript src/corr.R "data/gap_map_edu.csv" "data/corr.csv"
@@ -23,7 +23,7 @@ doc/report.md: src/report.Rmd result/figure/scatter.png result/figure/map.png da
 clean:
 	rm -f data/gap_map_edu.csv
 	rm -f data/corr.csv
-  rm -f result/figure/scatter.png
-  rm -f result/figure/map.png
-  rm -f doc/report.md
-  rm -f doc/report.html
+	rm -f result/figure/scatter.png
+	rm -f result/figure/map.png
+	rm -f doc/report.md
+	rm -f doc/report.html
