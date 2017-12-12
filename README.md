@@ -1,5 +1,8 @@
 # tertiary_edu_GDP
 
+## Docker Hub Image
+susanfungdata/tertiary
+
 ## Hypothesis/Objective:
 The hypothesis I want to test is whether there is correlation between tertiary education attainment and national GDP
 
